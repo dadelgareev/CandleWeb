@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westwood - Ароматические свечи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <a href="#about">О компании</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#order">Оформить заказ</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="img/big_logo2.png" alt="LOGO" class="logo">
+            <h1>АРОМАТИЧЕСКИЕ СВЕЧИ</h1>
+            <button class="order-btn" onclick="window.location.href='#order'">Заказать</button>
+        </div>
+        <img src="img/candle2.png" alt="Amber Noir Candle" class="hero-image">
+    </div>
+</header>
+
+<section id="about" class="about">
+    <img src="img/big_logo.png" alt="About Image" class="about-image">
+    <div class="about-text">
+        <h2>О нашем магазине</h2>
+        <p>Мы делаем свечи исключительно из натуральных компонентов: соевый воск, деревянный фитиль, стекло и пробковая крышка. 100% ручная работа - каждое изделие сделано с любовью. Используем отдушки только премиального качества, без фталатов.</p>
+    </div>
+</section>
+
+<section id="advantages" class="advantages">
+    <h2>Преимущества наших свечей</h2>
+    <div class="advantage-cards">
+        <div class="card">
+            <img src="img/icon-eye.png" alt="Stylish Design">
+            <p>Стильный дизайн</p>
+        </div>
+        <div class="card">
+            <img src="img/icon-sprout.png" alt="Premium Quality">
+            <p>Премиум качество</p>
+        </div>
+        <div class="card">
+            <img src="img/icon-flame.png" alt="Wide Choice">
+            <p>Широкий выбор</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" class="reviews">
+    <h2>Отзывы наших клиентов</h2>
+    <div class="review-cards">
+        <div class="review-card">
+            <img src="img/review1.png" alt="Fedor">
+            <h3>Фёдор</h3>
+            <p>Атмосферные свечи, придают уют в комнате</p>
+        </div>
+        <div class="review-card">
+            <img src="img/review2.png" alt="Valeria">
+            <h3>Валерия</h3>
+            <p>Прекрасный аромат, горит долго, свеча - восторг!</p>
+        </div>
+        <div class="review-card">
+            <img src="img/review3.png" alt="Inna">
+            <h3>Инна</h3>
+            <p>Запах невероятный и расслабляющий. Заполняет комнату очень быстро</p>
+        </div>
+    </div>
+    <button class="leave-review-btn">Оставить отзыв</button>
+</section>
+
+<section id="catalog" class="catalog">
+    <h2>Популярные товары</h2>
+    <div class="product-cards">
+        <img src="img/product1.png" alt="Product 1">
+        <img src="img/product2.png" alt="Product 2">
+        <img src="img/product3.png" alt="Product 3">
+    </div>
+</section>
+
+<div class="order-wrapper">
+    <img src="img/order.png" alt="Order" class="order">
+    <section id="order" class="order-section">
+        <h2>Оформить заказ</h2>
+        <h3>Наш консультант свяжется с Вами в ближайшее время.</h3>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <button type="submit">Отправить заявку</button>
+        </form>
+        <p>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
+    </section>
+</div>
+
+<footer id="contacts" class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <p><strong>Навигация:</strong><br>О компании<br>Каталог<br>Преимущества<br>Отзывы<br>Акции</p>
+        </div>
+        <div class="contact-info">
+            <p><strong>Телефон:</strong><br>+7 (777) 777 00 00</p>
+            <p><strong>Email:</strong><br>email@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <p><strong>Мы в соц. сетях:</strong></p>
+            <div class="social-icons">
+                <img src="img/vk-icon.svg" alt="VK">
+                <p>@westwood_vk</p>
+            </div>
+            <div class="social-icons">
+                <img src="img/icon-instagram.svg" alt="Instagram">
+                <p>@westwood_vk</p>
+            </div>
+            <div class="social-icons">
+                <img src="img/icon-telegram.svg" alt="Twitter">
+                <p>@westwood_vk</p>
+            </div>
+        </div>
+        <img src="img/big_logo2.png" alt="FOOTER LOGO" class="footer-logo">
+    </div>
+</footer>
+</body>
+</html>

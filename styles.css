@@ -1,0 +1,697 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.header {
+    position: relative;
+    padding: 20px 0;
+    background-image: url('img/main_background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Inter", "Helvetica Neue", sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    flex: 1;
+    min-width: 300px;
+}
+
+.logo {
+    text-transform: lowercase;
+    padding: 5px 15px;
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.order-btn {
+    background-color: #bf8559;
+    color: #ffffff;
+    border: none;
+    padding: 15px 80px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(191, 133, 89, 0.3);
+}
+
+.order-btn:hover {
+    background-color: #a66e47;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 20px;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #bf8559;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-image {
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    background-image: url('img/about-image.png');
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.advantages {
+    margin: 50px 20px;
+}
+
+.advantages h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #bf8559;
+    margin: 40px 0;
+}
+
+.advantage-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-image: url("img/main_background.png");
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    border-radius: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.reviews {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #bf8559;
+    margin: 40px 0;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.review-card {
+    background-color: #d7ad8e;
+    width: 300px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.leave-review-btn {
+    display: block;
+    margin: 40px auto;
+    background-color: #bf8559;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(191, 133, 89, 0.3);
+}
+
+.leave-review-btn:hover {
+    background-color: #a66e47;
+    transform: translateY(-2px);
+}
+
+.catalog {
+    background-image: url("img/popular_sales_background.png");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+.catalog h2 {
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    margin: 40px 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-cards img {
+    width: 300px;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-cards img:hover {
+    transform: scale(1.05);
+}
+
+.order-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 80px 20px;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.order-wrapper img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #bf8559 0%, #d7ad8e 100%);
+}
+
+.order-section {
+    text-align: left;
+    padding: 50px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.order-section h2 {
+    font-size: 36px;
+    color: #bf8559;
+    margin-bottom: 20px;
+}
+
+.order-section h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.order-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.order-section input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.order-section input:focus {
+    outline: none;
+    border-color: #bf8559;
+}
+
+.order-section button {
+    background-color: #bf8559;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(191, 133, 89, 0.3);
+}
+
+.order-section button:hover {
+    background-color: #a66e47;
+    transform: translateY(-2px);
+}
+
+.order-section p {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.footer {
+    background-color: rgba(191, 133, 89, 0.1);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo {
+    width: 240px;
+    height: 60px;
+    align-self: center;
+}
+
+.contact-info, .social-media, .footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contact-info p, .social-media p, .footer-links p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: start;
+    line-height: 1.8;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .order-btn {
+        padding: 12px 40px;
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 20px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .advantages h2, .reviews h2, .catalog h2 {
+        font-size: 28px;
+    }
+
+    .advantage-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .review-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-cards img {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .order-wrapper {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    .order-wrapper img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .order-section {
+        padding: 30px 20px;
+    }
+
+    .order-section h2 {
+        font-size: 28px;
+    }
+
+    .order-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info p, .social-media p, .footer-links p {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .header {
+        min-height: 500px;
+        padding: 15px 0;
+    }
+
+    .navbar {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .order-btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 250px;
+    }
+
+    .about, .advantages, .reviews, .catalog {
+        margin: 30px 10px;
+        padding: 40px 10px;
+    }
+
+    .about-text h2, .advantages h2, .reviews h2, .catalog h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .card img {
+        width: 150px;
+        height: auto;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .order-section {
+        padding: 20px 15px;
+    }
+
+    .order-section h2 {
+        font-size: 24px;
+    }
+
+    .order-section input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .order-section button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .advantage-cards, .review-cards {
+        justify-content: space-between;
+    }
+
+    .card, .review-card {
+        width: 280px;
+    }
+
+    .product-cards img {
+        width: 280px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-text, .card, .review-card, .product-cards img {
+    animation: fadeInUp 0.8s ease-out;
+}
